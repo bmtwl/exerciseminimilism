@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Tracker</title>
+  <title>Exercise Tracker</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -49,14 +49,14 @@
   <script>
 const workoutRoutine = {
   sunday: [
-    { exercise: 'Relax :)', sets: '', reps: '', rest: '' }
+    { exercise: 'Relax :)', sets: '0', reps: '0', rest: '24 hours' }
   ],
   monday: [
     { exercise: 'Squats', sets: '4-5', reps: '6-8', rest: '2-3 minutes' },
     { exercise: 'Deadlifts', sets: '3-4', reps: '6-8', rest: '2-3 minutes' },
     { exercise: 'Lunges', sets: '3', reps: '8-10 per leg', rest: '1.5-2 minutes' },
     { exercise: 'Cyclist-Specific Core Exercise', sets: '3', reps: '12-15', rest: '1 minute' },
-    { exercise: 'Conditioning', sets: '3-4', reps: 'As per chosen activity', rest: '1-2 minutes' }
+    { exercise: 'Conditioning', sets: '3-4', reps: 'Hill sprints or bike tabata', rest: '1-2 minutes' }
   ],
   tuesday: [
     { exercise: 'Bench Press', sets: '3-4', reps: '6-8', rest: '2-3 minutes' },
@@ -66,26 +66,28 @@ const workoutRoutine = {
     { exercise: 'Shoulder Stability Exercise', sets: '3', reps: '10-12', rest: '1 minute' }
   ],
   wednesday: [
+    { exercise: 'Recovery light cycle', sets: '1', reps: '1', rest: '2-3 minutes' },
+    { exercise: 'Recovery easy running', sets: '1', reps: '1', rest: '2-3 minutes' },
+    { exercise: 'Yoga, stretching and foam rolling session', sets: '2-3', reps: '1', rest: '2-3 minutes' },
+  ],
+  thursday: [
     { exercise: 'Box Jumps or Depth Jumps', sets: '3-4', reps: '6-8', rest: '2-3 minutes' },
     { exercise: 'Bulgarian Split Squats', sets: '3', reps: '8-10 per leg', rest: '1.5-2 minutes' },
     { exercise: 'Glute Bridges or Hip Thrusts', sets: '3', reps: '12-15', rest: '1 minute' },
     { exercise: 'Single-Leg Deadlifts', sets: '3', reps: '8-10 per leg', rest: '1.5-2 minutes' },
     { exercise: 'Core Rotation Exercise', sets: '3', reps: '10-12 per side', rest: '1 minute' }
   ],
-  thursday: [
+  friday: [
     { exercise: 'Overhead Press', sets: '3-4', reps: '6-8', rest: '2-3 minutes' },
     { exercise: 'Dips', sets: '3', reps: 'As many as possible with good form', rest: '2 minutes' },
     { exercise: 'Bicep Curls', sets: '2', reps: '10-12', rest: '1 minute' },
     { exercise: 'Farmers Walk or Carries', sets: '3', reps: '30-60 seconds', rest: '1-2 minutes' },
     { exercise: 'Cardiovascular Conditioning', sets: '3-4', reps: 'As per chosen activity', rest: '1-2 minutes' }
   ],
-  friday: [
-    { exercise: 'Road Cycling Race Simulation or Long Ride', sets: '', reps: '', rest: '' },
-    { exercise: 'Trail Running Session', sets: '', reps: '', rest: '' },
-    { exercise: 'Judo Training Session', sets: '', reps: '', rest: '' }
-  ],
   saturday: [
-    { exercise: 'Rest Day', sets: '', reps: '', rest: '' }
+    { exercise: 'Road Cycling Race Simulation or Long Ride', sets: '1', reps: '1', rest: '30 minutes' },
+    { exercise: 'Trail Running Session', sets: '1', reps: '1', rest: '30 minutes' },
+    { exercise: 'Judo Training Session', sets: '1', reps: '1', rest: '30 minutes' }
   ]
 };
 
