@@ -22,4 +22,4 @@ There is no data syncing built in, so all data is tied to the browser that is us
 It should work in any modern browser, and render equally well on desktop or mobile.
 
 ## Hosting and Demo
-You can either run the raw html file from your local filesystem, put it on a server you contol, or even fork the project and use githack as a way to access it e.g. https://raw.githack.com/bmtwl/exerciseminimilism/refs/heads/main/exercises.html
+You can either run the raw html file from your local filesystem, put it on a server you contol, or even fork the project and use githack as a way to access it e.g. [This demo github file permalink with github replaced with githack in the url](https://raw.githubusercontent.com/bmtwl/exerciseminimilism/f7ae4e4a6facb8098ffa6abffb27f9143c35157d/exercises.html) (Githack caches files for a year, so using permalinks is good to make sure you always have the revision of exercises.html that you want).
