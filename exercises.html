@@ -142,7 +142,7 @@ const workoutRoutine = {
           reps: cells[2].textContent,
           rest: cells[3].textContent,
           weight: cells[4].firstChild.value,
-          completedAt: cells[5].textContent
+          completedAt: getCurrentTimestamp()
         });
       });
       localStorage.setItem(`exercises_${currentDay}`, JSON.stringify(exercises));
