@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9bb6e5d8-1589-4499-86c5-997174040c3f)# exerciseminimilism
+## exerciseminimilism
 A small, single html file and browser local storage solution for tracking 7 fixed sets of daily exercises from one week to the next.
 
 ## Goals
@@ -30,3 +30,6 @@ This project his the front page of Hacker News for a few days and generated some
 It also has a (likely AI generated) youtube podcast: https://www.youtube.com/watch?v=Z1sNO2TDcGc
 
 There is a Japanese language article here: https://biggo.jp/news/202412280715_minimalist-exercise-tracker-sparks-debate
+
+## Alternative visions
+@chase-west has a version of this project that separates out the css and audio data here: https://github.com/chase-west/exerciseminimilism
