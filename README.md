@@ -1,4 +1,4 @@
-# exerciseminimilism
+![image](https://github.com/user-attachments/assets/9bb6e5d8-1589-4499-86c5-997174040c3f)# exerciseminimilism
 A small, single html file and browser local storage solution for tracking 7 fixed sets of daily exercises from one week to the next.
 
 ## Goals
@@ -23,3 +23,10 @@ It should work in any modern browser, and render equally well on desktop or mobi
 
 ## Hosting and Demo
 You can either run the raw html file from your local filesystem, put it on a server you contol, or even fork the project and use githack as a way to access it e.g. [This demo github file permalink with github replaced with githack in the url](https://raw.githack.com/bmtwl/exerciseminimilism/13d4ee27deb21004f30bae70ad48dcb0efdf18a6/exercises.html) (Githack caches files for a year, so using permalinks is good to make sure you always have the revision of exercises.html that you want).
+
+## Web refernces and discussions
+This project his the front page of Hacker News for a few days and generated some interesting discussion: https://news.ycombinator.com/item?id=42526769
+
+It also has a (likely AI generated) youtube podcast: https://www.youtube.com/watch?v=Z1sNO2TDcGc
+
+There is a Japanese language article here: https://biggo.jp/news/202412280715_minimalist-exercise-tracker-sparks-debate
