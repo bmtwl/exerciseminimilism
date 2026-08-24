@@ -47,35 +47,39 @@
     </div>
   </footer>
   <script>
-const workoutRoutine = [
-  // DAY 1: MONDAY (Lower Heavy)
-  { day: "Monday", category: "Lower Heavy", name: "Back Squat", target: "85% 1RM — 5 sets x 3 reps", unit: "lbs/kg" },
-  { day: "Monday", category: "Lower Heavy", name: "Conventional Deadlift", target: "85% 1RM — 4 sets x 3 reps", unit: "lbs/kg" },
-  { day: "Monday", category: "Lower Heavy", name: "Romanian Deadlift", target: "70% 1RM — 3 sets x 6 reps", unit: "lbs/kg" },
-  { day: "Monday", category: "Lower Heavy", name: "Nordic Hamstring Curl", target: "BW — 3 sets x 6 reps", unit: "reps" },
-  { day: "Monday", category: "Lower Heavy", name: "Heavy Ab Wheel / Dragon Flag", target: "Heavy — 4 sets x 8 reps", unit: "reps" },
-
-  // DAY 2: WEDNESDAY (Upper Heavy)
-  { day: "Wednesday", category: "Upper Heavy", name: "Bench Press", target: "85% 1RM — 5 sets x 3 reps", unit: "lbs/kg" },
-  { day: "Wednesday", category: "Upper Heavy", name: "Weighted Pull Up", target: "Added Weight (25-40 kg) — 5 sets x 3 reps", unit: "kg" },
-  { day: "Wednesday", category: "Upper Heavy", name: "Overhead Press Standing", target: "80% 1RM — 4 sets x 4 reps", unit: "lbs/kg" },
-  { day: "Wednesday", category: "Upper Heavy", name: "Ring Dips", target: "BW / Weighted — 3 sets x 12 reps", unit: "reps/kg" },
-  { day: "Wednesday", category: "Upper Heavy", name: "Dead Hang", target: "BW — 3 sets x To Failure", unit: "sec" },
-  { day: "Wednesday", category: "Upper Heavy", name: "Wrist Roller", target: "As Prescribed — 3 min Continuous", unit: "min" },
-
-  // DAY 3: FRIDAY (Lower Power Endurance)
-  { day: "Friday", category: "Lower Power Endurance", name: "Power Cleans", target: "60% 1RM — 6 sets x 10 reps", unit: "lbs/kg" },
-  { day: "Friday", category: "Lower Power Endurance", name: "Bulgarian Split Squat", target: "DBs — 4 sets x 8 reps/leg", unit: "DB weight" },
-  { day: "Friday", category: "Lower Power Endurance", name: "Hill Sprint", target: "Max Effort — 8 rounds x 30 sec work", unit: "rounds completed" },
-  { day: "Friday", category: "Lower Power Endurance", name: "Plate Swing", target: "Plate Weight — 8 rounds x 15 swings", unit: "plate weight" },
-
-  // DAY 4: SUNDAY (Upper Conditioning Judo)
-  { day: "Sunday", category: "Upper Conditioning Judo", name: "Judo Push Press", target: "As Prescribed — 5 sets x 5 reps", unit: "lbs/kg" },
-  { day: "Sunday", category: "Upper Conditioning Judo", name: "Judo Weighted Pull Up", target: "10 kg — 5 sets x Max Reps (AMRAP)", unit: "reps per set" },
-  { day: "Sunday", category: "Upper Conditioning Judo", name: "Judo Plate Clean & Jerk", target: "Plate Weight — 10 rounds x 5 per side (alternating)", unit: "plate weight" },
-  { day: "Sunday", category: "Upper Conditioning Judo", name: "Judo Burpees", target: "BW — 10 rounds x 5 reps", unit: "rounds completed" },
-  { day: "Sunday", category: "Upper Conditioning Judo", name: "Judo Sandbag Shouldering", target: "Sandbag Weight — 6 rounds x 5 reps", unit: "sandbag weight" }
-];
+const workoutRoutine = {
+  sunday: [
+    { exercise: 'Judo Push Press', sets: '5', reps: '5', rest: 'As prescribed' },
+    { exercise: 'Judo Weighted Pull Up (10 kg)', sets: '5', reps: 'Max reps (AMRAP)', rest: '-' },
+    { exercise: 'Judo Plate Clean & Jerk', sets: '10 rounds', reps: '5 per side (alternating)', rest: '-' },
+    { exercise: 'Judo Burpees (BW)', sets: '10 rounds', reps: '5', rest: '-' },
+    { exercise: 'Judo Sandbag Shouldering', sets: '6 rounds', reps: '5', rest: '-' }
+  ],
+  monday: [
+    { exercise: 'Back Squat (85% 1RM)', sets: '5', reps: '3', rest: '-' },
+    { exercise: 'Conventional Deadlift (85%)', sets: '4', reps: '3', rest: '-' },
+    { exercise: 'Romanian Deadlift (70%)', sets: '3', reps: '6', rest: '-' },
+    { exercise: 'Nordic Hamstring Curl (BW)', sets: '3', reps: '6', rest: '-' },
+    { exercise: 'Heavy Ab Wheel / Dragon Flag', sets: '4', reps: '8', rest: '-' }
+  ],
+  tuesday: [],
+  wednesday: [
+    { exercise: 'Bench Press (85%)', sets: '5', reps: '3', rest: '-' },
+    { exercise: 'Weighted Pull Up (25-40 kg)', sets: '5', reps: '3', rest: '-' },
+    { exercise: 'Overhead Press Standing (80%)', sets: '4', reps: '4', rest: '-' },
+    { exercise: 'Ring Dips (BW/Weighted)', sets: '3', reps: '12', rest: '-' },
+    { exercise: 'Dead Hang (BW)', sets: '3', reps: 'To failure', rest: '-' },
+    { exercise: 'Wrist Roller', sets: '1', reps: '3 min Continuous', rest: 'As prescribed' }
+  ],
+  thursday: [],
+  friday: [
+    { exercise: 'Power Cleans (60% 1RM)', sets: '6', reps: '10', rest: '-' },
+    { exercise: 'Bulgarian Split Squat (DBs)', sets: '4', reps: '8 per leg', rest: '-' },
+    { exercise: 'Hill Sprint (Max effort)', sets: '8 rounds', reps: '30 sec work', rest: '-' },
+    { exercise: 'Plate Swing', sets: '8 rounds', reps: '15 swings', rest: '-' }
+  ],
+  saturday: []
+};
 
     const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
     const currentDay = days[new Date().getDay()];
